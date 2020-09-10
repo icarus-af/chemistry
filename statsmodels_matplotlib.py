@@ -6,7 +6,6 @@ import pandas as pd
 from matplotlib import pyplot as plt
 from matplotlib import rcParams
 from patsy import dmatrices
-import math
 
 #Change font, font size, label distance
 
@@ -14,7 +13,6 @@ rcParams['font.family'] = 'sans-serif'
 rcParams['font.sans-serif'] = ['Lato']
 rcParams['axes.labelpad'] = 15
 plt.rcParams['font.size'] = 12
-
 
 #Your data
 
@@ -34,7 +32,6 @@ print(data)
 
 model=sm.OLS(y,X)
 fit=model.fit()
-
 
 #Results
 
@@ -60,7 +57,6 @@ ir=round(erro_intercept,2)
 print('Slope: ', s, '+-', sr)
 print('Intercept: ', i, '+-', ir)
 print('Adj. R^2: ', r2)
-
 
 #Graphing
 
