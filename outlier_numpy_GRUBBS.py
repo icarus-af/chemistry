@@ -3,8 +3,8 @@ import numpy as np
 
 
 
-#a = [float(x) for x in input().split()]
-a = [12.13,12.12,12.13,12.12,12.2]
+a = [float(x) for x in input().split()]
+#a = [12.13,12.12,12.13,12.12,12.2]
 print(a)
 
 df=np.array(a)
